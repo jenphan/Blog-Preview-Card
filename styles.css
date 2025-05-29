@@ -7,9 +7,9 @@
     --clr-text-muted: hsl(0, 0%, 42%);
     --ff-base: 'Figtree', sans-serif;
 
-    --fs-sm: 14px;
-    --fs-md: 16px;
-    --fs-lg: 24px;
+    --fs-sm: clamp(0.75rem, 1.5vw, 0.875rem); /* 14 px */
+    --fs-md: clamp(0.875rem, 2vw, 1rem); /*16px*/
+    --fs-lg: clamp(1.25rem, 3vw, 1.5rem); /* 24px */
 
     --shadow-default: 7px 7px;
     --shadow-hover: 14px 14px;
@@ -40,7 +40,7 @@ body {
 
 .card {
     background-color: var(--clr-white);
-    width: 24rem;
+    width: clamp(18rem, 75vw, 24rem);
     margin: auto;
     padding: 1.5rem;
     border-radius: 20px;
