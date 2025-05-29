@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --clr-yellow: hsl(47, 88%, 63%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-text: hsl(0, 0%, 7%);
+    --clr-text-muted: hsl(0, 0%, 42%);
+    --ff-base: 'Figtree', sans-serif;
+
+    --fs-sm: 14px;
+    --fs-md: 16px;
+    --fs-lg: 24px;
+
+    --shadow-default: 7px 7px;
+    --shadow-hover: 14px 14px;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--clr-yellow);
+    font-family: var(--ff-base);
+    font-size: var(--fs-md);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--clr-white);
+    width: 24rem;
+    margin: auto;
+    padding: 1.5rem;
+    border-radius: 20px;
+    border: 1px black solid;
+    box-shadow: var(--shadow-default);
+    transition: box-shadow 0.4s ease;
+}
+
+.card__img {
+    width: 100%;
+    display: block;
+    border-radius: 15px;
+}
+
+.card__tag {
+    background-color: var(--clr-yellow);
+    border-radius: 4px;
+    display: inline-block;
+    padding: 7px 14px;
+    font-weight: 800;
+    font-size: var(--fs-sm);
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.card__date {
+    font-size: var(--fs-sm);
+    margin-bottom: 24px;
+}
+
+.card__title {
+    color: var(--clr-text);
+    font-size: var(--fs-lg);
+    font-weight: 800;
+    margin-bottom: 12px;
+    transition: color 0.4s ease;
+}
+
+.card__desc {
+    color: var(--clr-text-muted);
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+.card__author {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.card__avatar {
+    height: 32px;
+    width: 32px;
+}
+
+.card__author-name {
+    color: var(--clr-text);
+    font-size: var(--fs-sm);
+    font-weight: 800;
+}
+
+.card:hover {
+    box-shadow: var(--shadow-hover);
+}
+
+.card:hover .card__title {
+    color: var(--clr-yellow);
+}
+
+.attribution {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--clr-white);
+    text-decoration: underline rgba(255, 255, 255, 0);
+    transition: text-decoration 1s ease;
+}
+
+.attribution a:hover,
+.attribution a:focus {
+    text-decoration: underline;
+}
