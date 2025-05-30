@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS)
-- Live Site URL: [Live Site](https://jenphan.github.io/Blog-Preview-Card/)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/responsive-blog-preview-card-using-clamp-flexbox-and-pure-css-t1bGPfTMbb)
+- Live Site URL: [Live site](https://jenphan.github.io/Blog-Preview-Card/)
 
 ## My process
 
